@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/comptester/_init_.py
+src/comptester/main.py
+src/comptester.egg-info/PKG-INFO
+src/comptester.egg-info/SOURCES.txt
+src/comptester.egg-info/dependency_links.txt
+src/comptester.egg-info/top_level.txt
