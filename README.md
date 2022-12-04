@@ -3,7 +3,7 @@ A simple python package to test the computation speed of different expressions.
  - E.g., does `x*x*x*x*x*x` or `x**6` run faster?
 
 ## Installation
-To install this package, run `pip install -i https://test.pypi.org/simple/ comptester==0.0.2` in the commandline.
+To install this package, run `pip install -i https://test.pypi.org/simple/ comptester==0.0.3` in the commandline.
 
 ## Usage
 See the **Example** section below for an in-depth example for how to use this package.
