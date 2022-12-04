@@ -6,7 +6,7 @@ A simple python package to test the computation speed of different expressions.
 To install this package, run `pip install -i https://test.pypi.org/simple/ comptester==0.0.2` in the commandline.
 
 ## Usage
-See the `Example` section below for an in-depth example for how to use this package.
+See the **Example** section below for an in-depth example for how to use this package.
  - The `test` method will perform a test given two expressions, an iteration count, and a sample count.
  - The `tprint` method will print the data from the test.
  - The `plot` method will plot the data so you can see visually how the expressions compare against each other and a control.
