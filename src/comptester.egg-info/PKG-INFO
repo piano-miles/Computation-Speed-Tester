@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: comptester
-Version: 0.0.2
+Version: 0.0.3
 Summary: A simple python package to test the computation speed of different expressions.
 Author: Miles Waugh
 Project-URL: Homepage, https://github.com/piano-miles/comptester
