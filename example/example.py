@@ -1,4 +1,4 @@
-import comptester
+from comptester import tester
 
 # Defining parameters
 test1 = 'x*x*x'  # Multiplication
@@ -7,10 +7,10 @@ iterations = 100000
 samples = 100
 
 # Run the test
-test = comptester.test(test1, test2, iterations, samples)
+test = tester.test(test1, test2, iterations, samples)
 
 # Print the test results to the console
-# comptester.tprint(test)
+# tester.tprint(test)
 
 # Plot the test results
-comptester.plot(test)
+tester.plot(test)
