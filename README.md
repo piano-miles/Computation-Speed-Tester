@@ -30,3 +30,8 @@ test = tester.test(test1, test2, iterations, samples)
 # Plot the test results
 tester.plot(test)
 ```
+
+## Example plot
+The example code above produces the following plot:
+
+<img src="https://github.com/piano-miles/comptester/blob/main/example/plot.png" width="512">
