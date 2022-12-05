@@ -2,8 +2,8 @@
 requires = [
     "setuptools>=42",
     "wheel",
-    "tqdm",
-    "matplotlib"
+    "<tqdm>",
+    "<matplotlib>"
 ]
 build-backend = "setuptools.build_meta"
 [project]
