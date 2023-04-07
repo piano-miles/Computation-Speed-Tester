@@ -45,15 +45,15 @@ def test(A, B, C, D):
 
 def tprint(p):
     A = '\n'
-    
+
     print(A+p[4])
     for a in p[1]:
         print(a)
-        
+
     print(A+p[5])
     for a in p[2]:
         print(a)
-        
+
     print('\ncontrol')
     for a in p[3]:
         print(a)
@@ -63,9 +63,9 @@ def plot(p):
     plt.plot(p[0], p[1], label=p[4])
     plt.plot(p[0], p[2], label=p[5])
     plt.plot(p[0], p[3], label='control')
-    
+
     plt.xlabel('sample')
     plt.ylabel('time')
-    
+
     plt.legend()
     plt.show()
