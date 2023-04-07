@@ -15,21 +15,21 @@ def test(A, B, C, D):
 
     k1 = eval(E+A)
     k2 = eval(E+B)
-    k3 = eval(E+'x')
+    k3 = eval(f'{E}x')
 
     for K in tqdm(range(D)):
         J = time.time()*1000
-        for j in range(C):
+        for _ in range(C):
             x = random.random()*4-2
             y = k1(x)
 
         L = time.time()*1000
-        for j in range(C):
+        for _ in range(C):
             x = random.random()*4-2
             y = k2(x)
 
         M = time.time()*1000
-        for j in range(C):
+        for _ in range(C):
             x = random.random()*4-2
             y = k3(x)
 
