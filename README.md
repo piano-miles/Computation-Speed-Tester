@@ -4,6 +4,21 @@ A simple python package to test the computation speed of different expressions.
 
 - E.g., does `x*x*x*x*x*x` or `x**6` run faster?
 
+## Contents
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Comptester](#comptester)
+  - [Contents](#contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Example](#example)
+  - [Example plot](#example-plot)
+
+<!-- /code_chunk_output -->
+
 ## Installation
 
 To install this package, run the [install](./install) script (or run the commands in your terminal).
@@ -21,14 +36,19 @@ See the **Example** section below for an in-depth example for how to use this pa
 ```py
 from comptester import tester
 
-# Defining parameters and expressions we want to test
-test1 = 'x*x*x*x*x*x'  # Compute x^6 by multiplication
-test2 = 'x**6'         # Compute x^6 by power
-iterations = 100000    # Number of times each expression is tested in a sample
-samples = 100          # Number of samples to collect
+# Defining parameters
+multiplication = "x*x*x*x*x*x"  # Compute x^6 by multiplication
+power = "x**6"                  # Compute x^6 by power
+iteration_count = 100000        # Number of times each expression is tested in a sample
+samples = 100                   # Number of samples to collect
 
-# Run the test and store the test object in the 'test' variable
-test = tester.test(test1, test2, iterations, samples)
+# Run the test and store it in the 'test' variable
+test = tester.test(
+    expr1=multiplication,
+    expr2=power,
+    iters=iteration_count,
+    sample_count=samples,
+)
 
 # Print the test results to the console
 # tester.tprint(test)
@@ -41,4 +61,4 @@ tester.plot(test)
 
 The example code above produces the following plot:
 
-<img src="https://github.com/piano-miles/comptester/blob/main/example/plot.png" width="512">
+![Example plot](./example/plot.png)
