@@ -1,17 +1,23 @@
 # Comptester
+
 A simple python package to test the computation speed of different expressions.
- - E.g., does `x*x*x*x*x*x` or `x**6` run faster?
+
+- E.g., does `x*x*x*x*x*x` or `x**6` run faster?
 
 ## Installation
-To install this package, run `python3 -m pip install tqdm matplotlib && python3 -m pip install -i https://test.pypi.org/simple/ comptester==0.1.0` in the commandline.
+
+To install this package, run the [install](./install) script (or run the commands in your terminal).
 
 ## Usage
+
 See the **Example** section below for an in-depth example for how to use this package.
- - The `test` method will perform a test given two expressions, an iteration count, and a sample count.
- - The `tprint` method will print the data from the test.
- - The `plot` method will plot the data so you can see visually how the expressions compare against each other and a control.
+
+- The `test` method will perform a test given two expressions, an iteration count, and a sample count.
+- The `tprint` method will print the data from the test.
+- The `plot` method will plot the data so you can see visually how the expressions compare against each other and a control.
 
 ## Example
+
 ```py
 from comptester import tester
 
@@ -32,6 +38,7 @@ tester.plot(test)
 ```
 
 ## Example plot
+
 The example code above produces the following plot:
 
 <img src="https://github.com/piano-miles/comptester/blob/main/example/plot.png" width="512">
