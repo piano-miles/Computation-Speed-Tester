@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: comptester
-Version: 0.1.0
+Version: 0.2.0
 Summary: A simple python package to test the computation speed of different expressions.
 Author: Miles Waugh
 Project-URL: Homepage, https://github.com/piano-miles/comptester
@@ -13,30 +13,56 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 
 # Comptester
+
 A simple python package to test the computation speed of different expressions.
- - E.g., does `x*x*x*x*x*x` or `x**6` run faster?
+
+- E.g., does `x*x*x*x*x*x` or `x**6` run faster?
+
+## Contents
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Comptester](#comptester)
+  - [Contents](#contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Example](#example)
+  - [Example plot](#example-plot)
+
+<!-- /code_chunk_output -->
 
 ## Installation
-To install this package, run `pip install -i https://test.pypi.org/simple/ comptester==0.1.0` in the commandline.
+
+To install this package, run the [install](./install) script (or run the commands in your terminal).
 
 ## Usage
+
 See the **Example** section below for an in-depth example for how to use this package.
- - The `test` method will perform a test given two expressions, an iteration count, and a sample count.
- - The `tprint` method will print the data from the test.
- - The `plot` method will plot the data so you can see visually how the expressions compare against each other and a control.
+
+- The `test` method will perform a test given two expressions, an iteration count, and a sample count.
+- The `tprint` method will print the data from the test.
+- The `plot` method will plot the data so you can see visually how the expressions compare against each other and a control.
 
 ## Example
+
 ```py
 from comptester import tester
 
 # Defining parameters
-test1 = 'x*x*x*x*x*x'  # Compute x^6 by multiplication
-test2 = 'x**6'  # Compute x^6 by power
-iterations = 100000  # Number of times each expression is tested in a sample
-samples = 100  # Number of samples to collect
+multiplication = "x*x*x*x*x*x"  # Compute x^6 by multiplication
+power = "x**6"                  # Compute x^6 by power
+iteration_count = 100000        # Number of times each expression is tested in a sample
+samples = 100                   # Number of samples to collect
 
 # Run the test and store it in the 'test' variable
-test = tester.test(test1, test2, iterations, samples)
+test = tester.test(
+    expr1=multiplication,
+    expr2=power,
+    iters=iteration_count,
+    sample_count=samples,
+)
 
 # Print the test results to the console
 # tester.tprint(test)
@@ -46,6 +72,7 @@ tester.plot(test)
 ```
 
 ## Example plot
+
 The example code above produces the following plot:
 
-<img src="https://github.com/piano-miles/comptester/blob/main/example/plot.png" width="512">
+![Example plot](./example/plot.png)

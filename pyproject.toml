@@ -1,24 +1,17 @@
 [build-system]
-requires = [
-    "setuptools>=42",
-    "wheel",
-    "<tqdm>",
-    "<matplotlib>"
-]
+requires = ["setuptools>=42", "wheel", "tqdm==4.66.1", "matplotlib==3.8.2"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "comptester"
-version = "0.1.0"
-authors = [
-  { name="Miles Waugh" },
-]
+version = "0.2.0"
+authors = [{ name = "Miles Waugh" }]
 description = "A simple python package to test the computation speed of different expressions."
 readme = "README.md"
 requires-python = ">=3.6"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
 ]
 
 [project.urls]
