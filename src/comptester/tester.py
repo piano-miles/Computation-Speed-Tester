@@ -1,8 +1,8 @@
+from random import random
 from time import time
-import random
 
-from tqdm import tqdm
 import matplotlib.pyplot as plt
+from tqdm import tqdm
 
 
 def test(expr1: str, expr2: str, iters: int, D: int) -> list:
@@ -33,17 +33,17 @@ def test(expr1: str, expr2: str, iters: int, D: int) -> list:
     for K in tqdm(range(D)):
         J = time() * 1000
         for _ in R:
-            x = random.random() * 4 - 2
+            x = random() * 4 - 2
             y = k1(x)
 
         L = time() * 1000
         for _ in R:
-            x = random.random() * 4 - 2
+            x = random() * 4 - 2
             y = k2(x)
 
         M = time() * 1000
         for _ in R:
-            x = random.random() * 4 - 2
+            x = random() * 4 - 2
             y = k3(x)
 
         N = time() * 1000
